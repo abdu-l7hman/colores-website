@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>2025 Color Trends</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    body {
+      padding: 20px;
+      background-color: #f8f9fa;
+    }
+    h1, h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #333;
+    }
+    h1 {
+      font-size: 28px;
+      margin-top: 10px;
+    }
+    h2 {
+      font-size: 22px;
+      margin-top: 30px;
+    }
+    p {
+      text-align: center;
+      margin-bottom: 30px;
+      color: #555;
+      max-width: 800px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .palette-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+      margin-bottom: 40px;
+    }
+    .palette {
+      width: 280px;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+    .palette:hover {
+      transform: translateY(-5px);
+    }
+    .palette-name {
+      padding: 12px;
+      text-align: center;
+      font-weight: 600;
+      background-color: white;
+    }
+    .color-strip {
+      display: flex;
+      height: 160px;
+    }
+    .color {
+      flex: 1;
+      position: relative;
+      cursor: pointer;
+      transition: all 0.2s ease;
+    }
+    .color:hover {
+      flex: 1.5;
+    }
+    .color-info {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background-color: rgba(255,255,255,0.9);
+      padding: 5px;
+      text-align: center;
+      font-size: 12px;
+      transform: translateY(100%);
+      transition: transform 0.2s ease;
+    }
+    .color:hover .color-info {
+      transform: translateY(0);
+    }
+    .footer {
+      text-align: center;
+      padding: 20px;
+      color: #666;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+  <h1>2025 Color Trend Palettes</h1>
+  <p>A curated collection of trending color palettes for 2025. Hover over colors to see hex codes. Each palette features 5 complementary colors that work well together for various design applications.</p>
+  
+  <h2>Nature-Inspired Palettes</h2>
+  <div class="palette-container">
+    <div class="palette">
+      <div class="palette-name">Coastal Serenity</div>
+      <div class="color-strip">
+        <div class="color" style="background-color: #D4E7ED;">
+          <div class="color-info">#D4E7ED</div>
+        </div>
+        <div class="color" style="background-color: #8CBECC;">
+          <div class="color-info">#8CBECC</div>
+        </div>
+        <div class="color" style="background-color: #4A869C;">
+          <div class="color-info">#4A869C</div>
+        </div>
+        <div class="color" style="background-color: #2C5D73;">
+          <div class="color-info">#2C5D73</div>
+        </div>
+        <div class="color" style="background-color: #E9F2F5;">
+          <div class="color-info">#E9F2F5</div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="palette">
+      <div class="palette-name">Forest Whispers</div>
+      <div class="color-strip">
+        <div class="color" style="background-color: #5C8D76;">
+          <div class="color-info">#5C8D76</div>
+        </div>
+        <div class="color" style="background-color: #2D4F3E;">
+          <div class="color-info">#2D4F3E</div>
+        </div>
+        <div class="color" style="background-color: #AECBB6;">
+          <div class="color-info">#AECBB6</div>
+        </div>
+        <div class="color" style="background-color: #D7E4DA;">
+          <div class="color-info">#D7E4DA</div>
+        </div>
+        <div class="color" style="background-color: #849F8F;">
+          <div class="color-info">#849F8F</div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="palette">
+      <div class="palette-name">Desert Dusk</div>
+      <div class="color-strip">
+        <div class="color" style="background-color: #E5C1A6;">
+          <div class="color-info">#E5C1A6</div>
+        </div>
+        <div class="color" style="background-color: #B87E5F;">
+          <div class="color-info">#B87E5F</div>
+        </div>
+        <div class="color" style="background-color: #7D4D3E;">
+          <div class="color-info">#7D4D3E</div>
+        </div>
+        <div class="color" style="background-color: #F3E2D4;">
+          <div class="color-info">#F3E2D4</div>
+        </div>
+        <div class="color" style="background-color: #CCA68C;">
+          <div class="color-info">#CCA68C</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <h2>Contemporary Minimalist</h2>
+  <div class="palette-container">
+    <div class="palette">
+      <div class="palette-name">Modern Neutrals</div>
+      <div class="color-strip">
+        <div class="color" style="background-color: #EEEEE6;">
+          <div class="color-info">#EEEEE6</div>
+        </div>
+        <div class="color" style="background-color: #DBDBD2;">
+          <div class="color-info">#DBDBD2</div>
+        </div>
+        <div class="color" style="background-color: #B3B3A8;">
+          <div class="color-info">#B3B3A8</div>
+        </div>
+        <div class="color" style="background-color: #86867A;">
+          <div class="color-info">#86867A</div>
+        </div>
+        <div class="color" style="background-color: #33332D;">
+          <div class="color-info">#33332D</div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="palette">
+      <div class="palette-name">Soft Concrete</div>
+      <div class="color-strip">
+        <div class="color" style="background-color: #F7F7F7;">
+          <div class="color-info">#F7F7F7</div>
+        </div>
+        <div class="color" style="background-color: #E5E5E5;">
+          <div class="color-info">#E5E5E5</div>
+        </div>
+        <div class="color" style="background-color: #CCCCCC;">
+          <div class="color-info">#CCCCCC</div>
+        </div>
+        <div class="color" style="background-color: #999999;">
+          <div class="color-info">#999999</div>
+        </div>
+        <div class="color" style="background-color: #555555;">
+          <div class="color-info">#555555</div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="palette">
+      <div class="palette-name">Warm Minimalism</div>
+      <div class="color-strip">
+        <div class="color" style="background-color: #F5F0E8;">
+          <div class="color-info">#F5F0E8</div>
+        </div>
+        <div class="color" style="background-color: #E6D9CA;">
+          <div class="color-info">#E6D9CA</div>
+        </div>
+        <div class="color" style="background-color: #D1BEA8;">
+          <div class="color-info">#D1BEA8</div>
+        </div>
+        <div class="color" style="background-color: #AD9B85;">
+          <div class="color-info">#AD9B85</div>
+        </div>
+        <div class="color" style="background-color: #7D6E5B;">
+          <div class="color-info">#7D6E5B</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <h2>Bold & Vibrant</h2>
+  <div class="palette-container">
+    <div class="palette">
+      <div class="palette-name">Digital Neon</div>
+      <div class="color-strip">
+        <div class="color" style="background-color: #FF206E;">
+          <div class="color-info">#FF206E</div>
+        </div>
+        <div class="color" style="background-color: #41EAD4;">
+          <div class="color-info">#41EAD4</div>
+        </div>
+        <div class="color" style="background-color: #FBFF12;">
+          <div class="color-info">#FBFF12</div>
+        </div>
+        <div class="color" style="background-color: #011627;">
+          <div class="color-info">#011627</div>
+        </div>
+        <div class="color" style="background-color: #B673F8;">
+          <div class="color-info">#B673F8</div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="palette">
+      <div class="palette-name">Vivid Pastels</div>
+      <div class="color-strip">
+        <div class="color" style="background-color: #FFD1DC;">
+          <div class="color-info">#FFD1DC</div>
+        </div>
+        <div class="color" style="background-color: #FFB6C1;">
+          <div class="color-info">#FFB6C1</div>
+        </div>
+        <div class="color" style="background-color: #AFEEEE;">
+          <div class="color-info">#AFEEEE</div>
+        </div>
+        <div class="color" style="background-color: #CCFBFF;">
+          <div class="color-info">#CCFBFF</div>
+        </div>
+        <div class="color" style="background-color: #FFFFD4;">
+          <div class="color-info">#FFFFD4</div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="palette">
+      <div class="palette-name">Electric Energy</div>
+      <div class="color-strip">
+        <div class="color" style="background-color: #0061FF;">
+          <div class="color-info">#0061FF</div>
+        </div>
+        <div class="color" style="background-color: #FF6B00;">
+          <div class="color-info">#FF6B00</div>
+        </div>
+        <div class="color" style="background-color: #7B00FF;">
+          <div class="color-info">#7B00FF</div>
+        </div>
+        <div class="color" style="background-color: #FF006B;">
+          <div class="color-info">#FF006B</div>
+        </div>
+        <div class="color" style="background-color: #00F0FF;">
+          <div class="color-info">#00F0FF</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <h2>Muted & Sophisticated</h2>
+  <div class="palette-container">
+    <div class="palette">
+      <div class="palette-name">Sage & Clay</div>
+      <div class="color-strip">
+        <div class="color" style="background-color: #CDD7D6;">
+          <div class="color-info">#CDD7D6</div>
+        </div>
+        <div class="color" style="background-color: #B6C8C3;">
+          <div class="color-info">#B6C8C3</div>
+        </div>
+        <div class="color" style="background-color: #D1C2AE;">
+          <div class="color-info">#D1C2AE</div>
+        </div>
+        <div class="color" style="background-color: #A39689;">
+          <div class="color-info">#A39689</div>
+        </div>
+        <div class="color" style="background-color: #7C8986;">
+          <div class="color-info">#7C8986</div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="palette">
+      <div class="palette-name">Dusty Lavender</div>
+      <div class="color-strip">
+        <div class="color" style="background-color: #D6D0E4;">
+          <div class="color-info">#D6D0E4</div>
+        </div>
+        <div class="color" style="background-color: #B3A9CF;">
+          <div class="color-info">#B3A9CF</div>
+        </div>
+        <div class="color" style="background-color: #967BB6;">
+          <div class="color-info">#967BB6</div>
+        </div>
+        <div class="color" style="background-color: #E9E6F0;">
+          <div class="color-info">#E9E6F0</div>
+        </div>
+        <div class="color" style="background-color: #665783;">
+          <div class="color-info">#665783</div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="palette">
+      <div class="palette-name">Terracotta Tones</div>
+      <div class="color-strip">
+        <div class="color" style="background-color: #E6B89C;">
+          <div class="color-info">#E6B89C</div>
+        </div>
+        <div class="color" style="background-color: #CB997E;">
+          <div class="color-info">#CB997E</div>
+        </div>
+        <div class="color" style="background-color: #9C6644;">
+          <div class="color-info">#9C6644</div>
+        </div>
+        <div class="color" style="background-color: #EDDCD2;">
+          <div class="color-info">#EDDCD2</div>
+        </div>
+        <div class="color" style="background-color: #FFF1E6;">
+          <div class="color-info">#FFF1E6</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="footer">
+    <p>Hover over each color to see its hex code. These palettes reflect color trends for 2025.</p>
+  </div>
+</body>
+</html>
